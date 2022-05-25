@@ -1,0 +1,158 @@
+.field-icon
+{
+    float: right!important;
+    position: relative;
+    margin-left: -25px;
+  margin-top: -25px;
+}
+
+.bouton{
+	color: white;
+	text-transform: uppercase;
+	background-color: #46A1B4;
+	border: 0.15em solid #377F8F;
+	margin: 0.1em 0;
+	padding: .5em 1em;
+	font-size: 1rem;
+    margin-top: 10px;
+	transition-property: border,background,color;
+}
+
+video
+{
+    background-color: #000;
+}
+
+/***************************************************************PAGE ADMIN******************************************************/
+#mon_titre
+{
+    margin-bottom: 50px;
+    margin-top: 90px;
+    color: #46a1b4;
+    text-align: center;
+}
+
+.bloc_milieu
+{
+    max-width: 70%;
+    min-width: inherit;
+}
+
+.decale {
+    margin-left: 25%;
+}
+
+.scrollTab {
+  height:150px;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.contenu {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.bold {
+    font-size: 16px;
+}
+
+.formulaire {
+    padding: 3%;
+    background-color: #46a1b4;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 3%;
+}
+
+#connexion {
+    padding: 3%;
+    margin-left: 25%;
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color:#46a1b4 ;
+}
+
+@media screen and (max-width: 680px){
+    #connexion
+    {
+        width: 90%!important;
+        margin-left: 5%;
+    }
+    #navAdmin.navbar
+    {
+        width: 100%!important;
+    }
+}
+
+.act{
+	background-color: white;
+	color: #46a1b4 ;
+	border: grey;
+}
+
+#navAdmin.navbar-light .navbar-nav .nav-link{
+    color:rgba(0,0,0,.5)
+}
+
+#navAdmin.nav-item{
+    background-color: inherit;
+
+}
+
+/*#navAdmin.bg-light{
+    background-color: lightgrey!important;
+}*/
+
+#navAdmin.navbar{
+    background-color: whitesmoke!important;
+    width: 100%;
+    height: max-content;
+}
+
+#navAdmin.nav-item,#navAdmin.nav-link{
+    font-size: 10px;
+    padding-left: 0px;
+    background-color: transparent!important;
+}    
+
+
+#navAdmin.navbar-light #navAdmin.navbar-nav #navAdmin.nav-link #navAdmin.nav-item{
+    color: black;
+    position: relative;
+    display: block;
+    padding: 3px;
+    font-family: sans-serif;
+
+}
+
+#navAdmin.navbar-light .navbar-nav .nav-link:hover{
+    /*border: 2px solid transparent;*/
+    border-bottom: 2px solid #CFCFCF;
+    background-color: lightgrey;
+    color: black;
+    
+    
+}
+#navAdmin.navbar-light #navAdmin.navbar-nav {
+    /*border: 2px solid transparent;*/
+    border-bottom: 2px solid #CFCFCF;
+    background-color: rgb(199, 216, 219);
+    color: black!important;
+    
+}
+
+#navAdmin.navbar-light .navbar-nav .page-active:hover,
+ .navbar-nav .page-active
+{
+    border: white;
+    background-color: rgba(206, 220, 231, 0.62);
+    border-top: 3px solid #CFCFCF!;
+    border-bottom: 2px solid #CFCFCF;
+    margin-top: 0px;
+    
+}
+

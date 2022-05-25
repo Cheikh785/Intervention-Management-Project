@@ -1,0 +1,337 @@
+/******************STYLES CSS DE LA PAGE EVENEMENT  ***********************/
+.banniere
+{
+   width: 100%;
+  min-height: 240px;
+  max-height: 500px;
+  background-color: : white;
+  background: url(../img/ban.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0em;
+  box-shadow: 5px 5px 15px lightblue;
+}
+
+.banniere h1
+{
+  color: white;
+  text-align: center;
+  display: block;
+    margin: auto;
+    padding-top: 6%;
+    font-size: 4em;
+    font-style: italic;
+}
+.buttonEv
+{
+	color: white;
+	text-transform: uppercase;
+	background-color: #46A1B4;
+	border: 0.15em solid #377F8F;
+	margin: 0.1em 0;
+	padding: .5em 1em;
+	font-size: 1rem;
+    margin-top: 40px;
+	transition-property: border,background,color;
+}
+
+.buttonEv.active
+{
+    background-color: rgba(76,214,245,0.62)!important;
+}
+
+.ev
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.archive
+{
+    margin-bottom: 62px;
+    
+}
+
+.element-item
+{
+    box-shadow: 1px 1px 5px #d4d2d2;
+    box-sizing: border-box;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;  
+    padding : 3px;
+}
+
+.img-padder {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+	padding: 5px;   
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.recents,.a_venir{
+    
+}
+
+main .info {
+    border-bottom: 1px dotted #eaeaea;
+    border-top: 1px dotted #eaeaea;
+    padding: 5px 0;
+    margin: 20px 0;
+    color: rgba(100, 100, 100, 0.8);
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    /*text-align: center;*/
+}
+.ev main .info.list-inline li:not(:last-child){
+	padding-left: 0.15px;
+    border-right: 1px solid #fafafa;
+}
+
+.blog-content main .info.list-inline li:first-child {
+    padding-left: 0px;
+}
+
+.ev main .info li {
+    display: table-cell;
+    padding: 0 15px 0 15px;
+}
+
+main p 
+{
+    line-height: 30px;
+}
+
+.rm-btn
+{
+    background-color: transparent;
+    margin-top: 20px;
+    color: #46a1b4;
+    border-radius: 0px;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    padding: 13px 20px;
+    border-color: #46a1b4;
+}
+
+.plus-btn:hover
+{
+    background-color: #46a1b4;
+    color: #fff;
+    border-color: #3A90CD;
+}
+
+.plus-btn
+{
+    background-color: transparent;
+    color: #46a1b4;
+    border-radius: 0px;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+    padding: 5px 12px;
+    margin: 4px 0px 0px 5px;
+    border-color: #46a1b4;
+}
+
+.btt
+{
+    font-size: 2em;
+    transition: all 0.3s ease-in;
+    z-index: 998;
+    right:0% ;
+    bottom: 0%;
+    position: fixed;
+}
+
+.btt:hover
+{
+   color: cadetblue;
+}
+
+
+.im {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+
+.archive {
+    margin-bottom: 75px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**************************************************************Page Détail événement***********************************************************/
+.entete-ev
+{
+    z-index: 2;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,.25);
+    box-shadow: 0 1px 4px 1px ;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    
+}
+
+#idk
+{
+    padding-bottom: 50px;
+}
+
+.list-inline li:not(:last-child)
+{
+	padding-left: 0.15px;
+    border-right: 1px solid #fafafa;
+}
+
+ .list-inline li:first-child {
+    padding-left: 0px;
+}
+
+
+h1
+{
+    text-align: center;
+}
+
+.licones
+{
+    text-align: center;
+    
+}
+
+.list
+{
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+
+.card
+{
+    max-width: 855px;
+    min-width: inherit;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.evCarousel {
+    width: 80%;
+    margin-left: 9.85%;
+    margin-bottom: 30px;
+}
+
+.descriptionEv {
+    width: 80%;
+    margin-left: 9.5%;
+    margin-bottom: 30px;
+}
+
+.vid {
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: 9.5%;
+} 
+
+/*********************************PAGE ADMIN**************************/
+#mon_titre
+{
+    
+    background-color: floralwhite;
+    margin-bottom: 50px;
+    margin-top: 90px;
+    color: #46a1b4;
+
+}
+
+#ajouter,#supprimer,#modifier
+{
+    max-width: 500px;
+    min-width: inherit;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+    /*border: 3px solid #46a1b4;*/
+}
+
+#consulter
+{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 70%;
+    min-width: inherit;
+}
+
+.decale {
+    margin-left: 25%;
+}
+
+.scrollTab {
+  height:150px;
+  overflow-y: scroll;
+}
+
+.contenu {
+    margin-bottom: 60px;
+    margin-top: 40px;
+    
+}
+
+.bold {
+    font-size: 16px;
+}
+
+.formulaire {
+    padding: 3%;
+    background-color: #46a1b4;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 3%;
+}
+
+.connexion {
+    padding: 3%;
+    border-color: cadetblue;
+    margin-left: 30%;
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color:#46a1b4 ;
+    margin-bottom: 9%;
+}
+
+.connexion label {
+	font-size: 20px;
+}
+
+#login {
+	width: 100%;
+}
+
+#myInput {
+	width: 100%;
+}
+
+
+#connect {
+	margin-bottom: 13%;
+}
+
+
+
+
+

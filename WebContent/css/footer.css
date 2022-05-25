@@ -1,0 +1,63 @@
+
+footer p
+{
+	color: #fff;
+	line-height: 25px;
+}
+
+
+footer .footer-top
+{
+	background:#30C3CC;
+	padding: 60px 0;
+	color: #fff;
+}
+
+.segment-three
+{
+	margin-left: 30%;
+}
+
+
+.segment-three h2
+{
+	color: #000;
+	font-family: Poppins;
+	text-transform: uppercase;
+}
+
+
+footer .footer-bottom-text
+{
+	text-align: center;
+	background: #4a8b98;
+	line-height: 75px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	.md-mb-30
+	{
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.sm-mb-30
+	{
+		margin-bottom: 30px;
+	}
+
+	.footer-top
+	{
+		padding: 50px 0;
+	}
+}
+
+.fa-instagram
+{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+    border-radius:100%;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+	<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>com.GDI.servlets.Accueil</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Accueil</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DemanderIntervention</servlet-name>
+		<servlet-class>com.GDI.servlets.DemanderIntervention</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DemanderIntervention</servlet-name>
+		<url-pattern>/DemanderIntervention</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Inscription</servlet-name>
+		<servlet-class>com.GDI.servlets.Inscription</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Inscription</servlet-name>
+		<url-pattern>/Inscription</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Connexion</servlet-name>
+		<servlet-class>com.GDI.servlets.Connexion</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/Connexion</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+    	<listener-class>com.GDI.config.InitialisationDaoFactory</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>InterventionUrgent</servlet-name>
+		<servlet-class>com.GDI.servlets.InterventionUrgent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InterventionUrgent</servlet-name>
+		<url-pattern>/urgent</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>InterventionPeuUrgent</servlet-name>
+		<servlet-class>com.GDI.servlets.InterventionPeuUrgent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InterventionPeuUrgent</servlet-name>
+		<url-pattern>/peu-urgent</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>InterventionPasUrgent</servlet-name>
+		<servlet-class>com.GDI.servlets.InterventionPasUrgent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InterventionPasUrgent</servlet-name>
+		<url-pattern>/pas-urgent</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>ChefDePole</servlet-name>
+		<servlet-class>com.GDI.servlets.ChefDePole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChefDePole</servlet-name>
+		<url-pattern>/chef-de-pole</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>MateriauxUtilises</servlet-name>
+		<servlet-class>com.GDI.servlets.MateriauxUtilises</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MateriauxUtilises</servlet-name>
+		<url-pattern>/materiaux-utilises</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>InterventionTerminee</servlet-name>
+		<servlet-class>com.GDI.servlets.InterventionTerminee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InterventionTerminee</servlet-name>
+		<url-pattern>/intervention-terminee</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>MessageChefPole</servlet-name>
+		<servlet-class>com.GDI.servlets.MessageChefPole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageChefPole</servlet-name>
+		<url-pattern>/message-chef-pole</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GestionStock</servlet-name>
+		<servlet-class>com.GDI.servlets.GestionStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GestionStock</servlet-name>
+		<url-pattern>/gestion-stock</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

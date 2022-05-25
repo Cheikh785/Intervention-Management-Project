@@ -1,0 +1,280 @@
+
+body
+{
+   background-image: linear-gradient(to bottom, #46a1b4, #40aec2, #37bcd0, #2acade, #12d8eb);
+}
+
+.containerf
+{
+  width: 30%;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 50px 35px 10px 35px;
+  margin:auto;
+}
+
+@media only screen and (max-width: 800px){
+ .containerf
+    {
+       width: 90%;
+    }
+  .form-outer form .page .field
+{
+  height: 100%;
+  width: 100%;
+  margin: 35px 0;
+  display: flex;
+  position: relative;
+}
+}
+
+.containerf header
+{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.containerf .form-outer
+{
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer form
+{
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page
+{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .title
+{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field
+{
+  height: 45px;
+  width: 100%;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+
+.form-outer form .page .field .label
+{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+
+}
+.form-outer form .page .field input
+{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+
+}
+
+form .page .field select
+{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.form-outer form .page .field button
+{
+  width: 100%;
+  height: calc(100% + 5px);
+  margin-top: -20px;
+  border: none;
+  background: #12D8EB;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-outer form .page .field button:hover
+{
+  background: #000;
+}
+
+.form-outer form .page .btns button
+{
+  margin-top: -20px !important;
+}
+
+form .page .btns button.prev
+{
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+form .page .btns button.next
+{
+  margin-left: 3px;
+}
+.containerf .progress-barf
+{
+  display: flex;
+  margin:40px 0;
+}
+
+.containerf .progress-barf .step
+{
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.progress-barf .step p
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+ 
+ .progress-barf .step p.active
+ {
+  color: #12D8EB;
+ }
+.progress-barf .step .bullet
+{
+  position: relative;
+  height: 25px; 
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.2s;
+  /*font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;*/
+}
+
+.progress-barf .step .bullet.active
+{
+  border-color: #12D8EB;
+  background: #12D8EB;
+}
+
+.progress-barf .step:last-child .bullet:before,
+.progress-barf .step:last-child .bullet:after
+{
+  display: none;
+}
+
+
+
+.progress-barf .step .bullet.active:after
+{
+  background: #12D8EB;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate
+{
+  100%
+  {
+    transform: scaleX(1);
+  }
+} 
+.progress-barf .step .bullet span
+{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1em;
+  position: absolute;
+  left: auto;
+  transform: translateX(-55%);
+}
+
+.progress-barf .step .bullet.active span
+{
+  display: none;
+}
+
+.progress-barf .step .check
+{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.progress-barf .step .check.active
+{
+  display: block;
+  color: #fff;
+}
+
+.etoile
+{
+  color: red;
+}
+
+/*********** gestion pop up ************/
+
+.containerf#blur.active
+{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup
+{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+#popup a
+{
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #111;
+}
+
+#popup.active
+{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}

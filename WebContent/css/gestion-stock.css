@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.stock {
+	background-color: white;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 4%;
+	border-radius: 15px;
+}
+
+.title-stock {
+	color: #e4811c;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.title-mat>h4 {
+	text-align: center;
+}
+
+.badge {
+	border-radius: 40%;
+/* 	width: 40%; */
+	font-size: 140%;
+}
+
+.epuise {
+	color: red;
+}
+
+.ajouter {
+	float: right;
+}
+
+.diminuer {
+	float: right;
+}
+
+.supprimer {
+	float: left;
+}
+
+.add-modal {
+	text-align: center;
+}
+
+.enregistrer  {
+	float: right;
+}
+
+.diminuer {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
